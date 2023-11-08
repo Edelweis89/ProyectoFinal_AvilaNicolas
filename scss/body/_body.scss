@@ -1,0 +1,107 @@
+body {
+  background-color: #f4ff80;
+
+  .principal {
+    display: flex;
+
+    justify-content: center;
+    height: 25vh;
+    width: 100%;
+
+    h1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 5rem;
+      font-size: 3.5rem;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  #cardsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    color: azure;
+    gap: 5rem;
+
+    .card {
+      background-color: #284b63;
+      .tituloCard {
+        text-align: center;
+        font-size: 1.9rem;
+        margin: 3rem;
+        color: #f4ff80;
+      }
+      .contenidoCard {
+        text-align: center;
+        width: 18rem;
+        border: 1rem;
+        width: 100%;
+        height: 10rem;
+        color: #f4ff80;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+body.darkMode {
+  background-color: #242423;
+
+  .principal {
+    display: flex;
+
+    justify-content: center;
+    height: 25vh;
+    width: 100%;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin: 5rem;
+      font-size: 3.5rem;
+      color: #f4ff80;
+    }
+  }
+
+  #cardsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: 1.2rem;
+    justify-content: center;
+    color: azure;
+    gap: 5rem;
+    margin-bottom: 4rem;
+
+    .card {
+      background-color: #f4ff80;
+      .tituloCard {
+        text-align: center;
+        font-size: 1.9rem;
+        margin: 3rem;
+        color: #000000;
+      }
+      .contenidoCard {
+        text-align: center;
+        width: 18rem;
+        border: 1rem;
+        width: 100%;
+        height: 10rem;
+        color: #000000;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

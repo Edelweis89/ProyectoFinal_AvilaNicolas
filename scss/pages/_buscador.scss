@@ -1,0 +1,58 @@
+#buscador {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+
+  #buscarForm {
+    #buscarBtn {
+      background-color: #00a896;
+      color: white;
+      border: none;
+      width: 20rem;
+      height: 5rem;
+    }
+    #buttonBuscar {
+      width: 20rem;
+      height: 5rem;
+    }
+  }
+}
+
+.cardBuscador {
+  background-color: #353535;
+  height: 60rem;
+
+  .tituloCardBuscador {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 2rem;
+    color: #f4ff80;
+  }
+  .contenidoCardBuscador {
+    width: 100%;
+    border: 1rem;
+    margin: 2rem;
+    height: 15rem;
+    color: #f4ff80;
+    font-size: 1.5rem;
+  }
+
+  .imgCardBuscador {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.parrafoBuscador {
+  padding: 2rem;
+  font-size: 1.7rem;
+  background-color: transparent;
+  color: #f4ff80;
+  width: 10rem;
+  height: 10rem;
+}
