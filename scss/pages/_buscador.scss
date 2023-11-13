@@ -9,22 +9,29 @@
 
   #buscarForm {
     #buscarBtn {
-      background-color: #00a896;
-      color: white;
-      border: none;
+      background-color: #d4d2d2;
+      color: rgb(0, 0, 0);
+      border: black;
       width: 20rem;
       height: 5rem;
+      font-family: "horror";
+      text-align: center;
+      font-size: 2rem;
     }
     #buttonBuscar {
-      width: 20rem;
+      width: 12rem;
       height: 5rem;
+      background-color: #353535;
+      color: #f4ff80;
+      font-family: "horror";
+      font-size: 3rem;
     }
   }
 }
 
 .cardBuscador {
   background-color: #353535;
-  height: 60rem;
+  height: 65rem;
 
   .tituloCardBuscador {
     text-align: center;
@@ -47,12 +54,28 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-.parrafoBuscador {
-  padding: 2rem;
-  font-size: 1.7rem;
-  background-color: transparent;
-  color: #f4ff80;
-  width: 10rem;
-  height: 10rem;
+
+  #agregarFavoritos {
+    width: 88%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(16, 66, 24);
+    color: #f4ff80;
+  }
+
+  #nuevaBusqueda {
+    width: 88%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #353535;
+    color: #f4ff80;
+  }
 }

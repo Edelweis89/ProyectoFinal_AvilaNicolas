@@ -7,7 +7,7 @@ function crearNode(array, container) {
     card.innerHTML = `
      <h3 class= "tituloCard"> ${array[i].name} </h3>
      <div class= "contenidoCard"> 
-         <p> status: ${array[i].status} </p>
+         <p> Status: ${array[i].status} </p>
          <p> Species: ${array[i].species} </p>
          <p> Gender: ${array[i].gender} </p>
          <p> Origin: ${array[i].origin.name} </p>

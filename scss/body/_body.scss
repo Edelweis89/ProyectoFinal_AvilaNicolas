@@ -1,5 +1,5 @@
 body {
-  background-color: #f4ff80;
+  background-color: #95d5b2;
 
   .principal {
     display: flex;
@@ -14,9 +14,10 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
-      margin: 5rem;
-      font-size: 3.5rem;
+      margin: 8rem;
+      font-size: 8rem;
       color: rgb(0, 0, 0);
+      font-family: "horror";
     }
   }
 
@@ -26,6 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15rem;
     margin-bottom: 4rem;
     font-size: 1.2rem;
     justify-content: center;
@@ -33,7 +35,8 @@ body {
     gap: 5rem;
 
     .card {
-      background-color: #284b63;
+      background-color: #14213d;
+
       .tituloCard {
         text-align: center;
         font-size: 1.9rem;
@@ -41,6 +44,7 @@ body {
         color: #f4ff80;
       }
       .contenidoCard {
+        font-family: "Roboto", sans-serif;
         text-align: center;
         width: 18rem;
         border: 1rem;
@@ -66,8 +70,8 @@ body.darkMode {
     h1 {
       display: flex;
       justify-content: center;
-      margin: 5rem;
-      font-size: 3.5rem;
+      margin: 8rem;
+      font-size: 8rem;
       color: #f4ff80;
     }
   }
