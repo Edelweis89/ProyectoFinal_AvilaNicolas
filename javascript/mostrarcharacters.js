@@ -23,3 +23,7 @@ function crearNode(array, container) {
     // container.appendChild(card);
   }
 }
+
+setTimeout(() => {
+  Swal.fire("Bienvenido al Sitio de Rick & Morty!");
+}, 1000);

@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
 
   h2 {
@@ -12,12 +12,14 @@
     text-align: center;
     font-size: 6rem;
     margin-top: 5rem;
+    font-family: "horror";
+    color: #a7c957;
   }
 
   #formulario {
-    margin-top: 5rem;
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 40rem;
+    gap: 1rem;
     font-size: 2rem;
     display: flex;
     flex-direction: column;

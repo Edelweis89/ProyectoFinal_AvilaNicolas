@@ -172,16 +172,16 @@ footer p {
   justify-content: end;
 }
 
-#buscador {
+#buscadorBarra {
   width: 100%;
-  height: 100vh;
+  height: 5rem;
   display: grid;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5rem;
 }
-#buscador #buscarForm #buscarBtn {
+#buscadorBarra #buscarForm #buscarBtn {
   background-color: #d4d2d2;
   color: rgb(0, 0, 0);
   border: black;
@@ -191,7 +191,7 @@ footer p {
   text-align: center;
   font-size: 2rem;
 }
-#buscador #buscarForm #buttonBuscar {
+#buscadorBarra #buscarForm #buttonBuscar {
   width: 12rem;
   height: 5rem;
   background-color: #353535;
@@ -200,17 +200,33 @@ footer p {
   font-size: 3rem;
 }
 
-.cardBuscador {
-  background-color: #353535;
-  height: 65rem;
+#buscadorTarjetas {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  background-color: transparent;
 }
-.cardBuscador .tituloCardBuscador {
+#buscadorTarjetas .cardBuscador {
+  background-color: #353535;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem;
+}
+#buscadorTarjetas .cardBuscador .tituloCardBuscador {
   text-align: center;
   font-size: 1.9rem;
   margin: 2rem;
   color: #f4ff80;
 }
-.cardBuscador .contenidoCardBuscador {
+#buscadorTarjetas .cardBuscador .contenidoCardBuscador {
   width: 100%;
   border: 1rem;
   margin: 2rem;
@@ -218,33 +234,19 @@ footer p {
   color: #f4ff80;
   font-size: 1.5rem;
 }
-.cardBuscador .imgCardBuscador {
+#buscadorTarjetas .cardBuscador .imgCardBuscador {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.cardBuscador #agregarFavoritos {
-  width: 88%;
-  margin: 2rem;
-  display: flex;
+#buscadorTarjetas .cardBuscador #agregarFavoritos {
+  width: 48%;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 1.5rem;
   background-color: rgb(16, 66, 24);
   color: #f4ff80;
-}
-.cardBuscador #nuevaBusqueda {
-  width: 88%;
-  margin: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: #353535;
-  color: #f4ff80;
+  margin: 3rem;
 }
 
 .form {
@@ -252,7 +254,7 @@ footer p {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
 }
 .form h2 {
@@ -261,11 +263,13 @@ footer p {
   text-align: center;
   font-size: 6rem;
   margin-top: 5rem;
+  font-family: "horror";
+  color: #a7c957;
 }
 .form #formulario {
-  margin-top: 5rem;
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 40rem;
+  gap: 1rem;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -286,6 +290,36 @@ footer p {
 body {
   width: 100%;
   height: 100vh;
+}
+body #tituloFav {
+  width: 100%;
+  height: 5rem;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+body #tituloFav h1 {
+  color: #f4ff80;
+}
+body #tituloFav #listaFav {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  background-color: transparent;
+}
+body #tituloFav #listaFav li {
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
