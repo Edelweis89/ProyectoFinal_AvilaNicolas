@@ -1,11 +1,11 @@
 body {
-  background-color: #95d5b2;
+  background-color: #fefae0;
 
   .principal {
     display: flex;
 
     justify-content: center;
-    height: 25vh;
+    height: 45vh;
     width: 100%;
 
     h1 {
@@ -27,44 +27,46 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 15rem;
-    margin-bottom: 4rem;
     font-size: 1.2rem;
     justify-content: center;
     color: azure;
-    gap: 5rem;
+    gap: 4rem;
+    margin-bottom: 8rem;
 
     .card {
-      background-color: #14213d;
+      background-color: #606c38;
+      padding: 2rem;
 
       .tituloCard {
         text-align: center;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         margin: 3rem;
         color: #f4ff80;
       }
       .contenidoCard {
+        margin-bottom: 4rem;
+        text-align: center;
         font-family: "Roboto", sans-serif;
         text-align: center;
         width: 18rem;
         border: 1rem;
         width: 100%;
         height: 10rem;
-        color: #f4ff80;
-        font-size: 1.5rem;
+        color: #ffffff;
+        font-size: 1.6rem;
       }
     }
   }
 }
 
 body.darkMode {
-  background-color: #242423;
+  background-color: #353535;
 
   .principal {
     display: flex;
 
     justify-content: center;
-    height: 25vh;
+    height: 45vh;
     width: 100%;
 
     h1 {
@@ -72,7 +74,7 @@ body.darkMode {
       justify-content: center;
       margin: 8rem;
       font-size: 8rem;
-      color: #f4ff80;
+      color: #ccff33;
     }
   }
 
@@ -83,19 +85,20 @@ body.darkMode {
     flex-direction: row;
     flex-wrap: wrap;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     justify-content: center;
-    color: azure;
-    gap: 5rem;
+    color: transparent;
+
     margin-bottom: 4rem;
 
     .card {
-      background-color: #f4ff80;
+      background-color: #606c38;
+
       .tituloCard {
         text-align: center;
-        font-size: 1.9rem;
-        margin: 3rem;
-        color: #000000;
+        font-size: 2rem;
+        margin: 2rem;
+        color: #ccff33;
       }
       .contenidoCard {
         text-align: center;
@@ -103,8 +106,9 @@ body.darkMode {
         border: 1rem;
         width: 100%;
         height: 10rem;
-        color: #000000;
-        font-size: 1.5rem;
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
       }
     }
   }

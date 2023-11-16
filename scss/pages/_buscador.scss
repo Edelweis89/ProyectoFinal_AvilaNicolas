@@ -1,82 +1,87 @@
-#buscadorBarra {
-  width: 100%;
-  height: 5rem;
-  display: grid;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5rem;
-
-  #buscarForm {
-    #buscarBtn {
-      background-color: #d4d2d2;
-      color: rgb(0, 0, 0);
-      border: black;
-      width: 20rem;
-      height: 5rem;
-      font-family: "horror";
-      text-align: center;
-      font-size: 2rem;
-    }
-    #buttonBuscar {
-      width: 12rem;
-      height: 5rem;
-      background-color: #353535;
-      color: #f4ff80;
-      font-family: "horror";
-      font-size: 3rem;
-    }
-  }
-}
-#buscadorTarjetas {
-  width: 100%;
+body {
   height: 100vh;
-  display: grid;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  background-color: transparent;
-
-  .cardBuscador {
-    background-color: #353535;
-    height: auto;
-    display: flex;
+  #buscadorBarra {
+    width: 100%;
+    height: 5rem;
+    display: grid;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5rem;
+    margin-top: 5rem;
 
-    .tituloCardBuscador {
-      text-align: center;
-      font-size: 1.9rem;
-      margin: 2rem;
-      color: #f4ff80;
+    #buscarForm {
+      #buscarBtn {
+        background-color: #d4d2d2;
+        color: rgb(0, 0, 0);
+        border: black;
+        width: 20rem;
+        height: 5rem;
+        font-family: "horror";
+        text-align: center;
+        font-size: 2rem;
+      }
+      #buttonBuscar {
+        width: 12rem;
+        height: 5rem;
+        background-color: #353535;
+        color: #f4ff80;
+        font-family: "horror";
+        font-size: 3rem;
+      }
     }
-    .contenidoCardBuscador {
-      width: 100%;
-      border: 1rem;
-      margin: 2rem;
-      height: 15rem;
-      color: #f4ff80;
-      font-size: 1.5rem;
-    }
+  }
+  #buscadorTarjetas {
+    width: auto;
+    height: 100vh;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 3rem;
+    justify-content: center;
+    background-color: transparent;
 
-    .imgCardBuscador {
+    .cardBuscador {
+      background-color: #606c38;
+      width: min-content;
+      height: 68rem;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-    }
+      margin: 2rem;
 
-    #agregarFavoritos {
-      width: 48%;
-      justify-content: center;
-      font-size: 1.5rem;
-      background-color: rgb(16, 66, 24);
-      color: #f4ff80;
-      margin: 3rem;
+      .tituloCardBuscador {
+        text-align: center;
+        font-size: 1.9rem;
+        margin: 2rem;
+        color: #f4ff80;
+      }
+      .contenidoCardBuscador {
+        width: 100%;
+        border: 1rem;
+        margin: 1rem;
+        height: 10rem;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .imgCardBuscador {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      #agregarFavoritos {
+        width: 48%;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: rgb(16, 66, 24);
+        color: #f4ff80;
+        margin: 3rem;
+      }
     }
   }
 }
