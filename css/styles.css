@@ -7,8 +7,8 @@ html * {
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "horror";
-  src: url("../../font/get_schwifty.ttf");
+  font-family: horror;
+  src: url(../font/get_schwifty.ttf);
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,17 +270,101 @@ html * {
   }
   body .principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 65vh;
     width: 100%;
   }
-  body .principal .TituloIndex {
-    display: flex;
-    justify-content: center;
+  body .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    margin-top: 55rem;
     color: #ccff33;
-    font-size: 5rem;
     text-align: center;
-    gap: 2rem;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+  }
+  body .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 35rem;
+  }
+  body .parrafoIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
   body #cardsContainer {
     width: 100%;
@@ -292,6 +376,7 @@ html * {
     justify-content: center;
     color: azure;
     gap: 4rem;
+    margin-top: 18rem;
     margin-bottom: 8rem;
   }
   body #cardsContainer .card {
@@ -784,15 +869,20 @@ html * {
   }
   body .principal {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 35vh;
+    height: 65vh;
     width: 100%;
   }
-  body .principal .TituloIndex {
-    font-size: 8rem;
-    color: #caff8a;
-    font-family: "horror";
+  body .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    margin-top: 25rem;
+    color: #ccff33;
     background-color: #46325d;
     padding: 2rem;
     border: #ccff33;
@@ -802,8 +892,55 @@ html * {
     text-align: left;
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
+    text-align: center;
   }
-  body .principal .TituloIndex:hover {
+  body .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 35rem;
+  }
+  body .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -900,14 +1037,101 @@ html * {
   }
   body.darkMode .principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 65vh;
     width: 100%;
   }
-  body.darkMode .principal h1 {
-    display: flex;
-    justify-content: center;
+  body.darkMode .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    margin-top: 25rem;
     color: #ccff33;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    text-align: center;
+  }
+  body.darkMode .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body.darkMode .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 35rem;
+  }
+  body.darkMode .parrafoIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
   body.darkMode #cardsContainer {
     width: 100%;
@@ -1329,15 +1553,20 @@ html * {
   }
   body .principal {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 35vh;
+    height: 65vh;
     width: 100%;
   }
-  body .principal .TituloIndex {
-    font-size: 15rem;
-    color: #caff8a;
-    font-family: "horror";
+  body .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    margin-top: 25rem;
+    color: #ccff33;
     background-color: #46325d;
     padding: 2rem;
     border: #ccff33;
@@ -1347,8 +1576,55 @@ html * {
     text-align: left;
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
+    text-align: center;
   }
-  body .principal .TituloIndex:hover {
+  body .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 35rem;
+  }
+  body .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1445,14 +1721,101 @@ html * {
   }
   body.darkMode .principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 65vh;
     width: 100%;
   }
-  body.darkMode .principal h1 {
-    display: flex;
-    justify-content: center;
+  body.darkMode .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    margin-top: 25rem;
     color: #ccff33;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    text-align: center;
+  }
+  body.darkMode .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body.darkMode .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 35rem;
+  }
+  body.darkMode .parrafoIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
   body.darkMode #cardsContainer {
     width: 100%;
@@ -1874,12 +2237,58 @@ html * {
   }
   body .principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 65vh;
     width: 100%;
   }
-  body .principal .TituloIndex {
-    width: 85%;
+  body .TituloIndex {
+    width: 90%;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+    margin-top: 25rem;
+    color: #ccff33;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    text-align: center;
+  }
+  body .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body .parrafoIndex {
+    width: 90%;
     height: auto;
     background-color: transparent;
     border: none;
@@ -1896,8 +2305,10 @@ html * {
     text-align: left;
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
   }
-  body .principal .TituloIndex:hover {
+  body .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1932,7 +2343,8 @@ html * {
     justify-content: center;
     color: azure;
     gap: 4rem;
-    margin-bottom: 8rem;
+    margin-top: 18rem;
+    margin-bottom: 5rem;
   }
   body #cardsContainer .card {
     background-color: #46325d;
@@ -1993,17 +2405,19 @@ html * {
   }
   body.darkMode .principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 65vh;
     width: 100%;
   }
-  body.darkMode .principal .TituloIndex {
-    width: 85%;
-    height: auto;
+  body.darkMode .TituloIndex {
+    width: 90%;
+    height: min-content;
     background-color: transparent;
     border: none;
-    font-size: 4rem;
-    margin-top: 2rem;
+    font-size: 2rem;
+    margin-top: 25rem;
     color: #ccff33;
     text-align: center;
     background-color: #46325d;
@@ -2016,7 +2430,53 @@ html * {
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
   }
-  body.darkMode .principal .TituloIndex:hover {
+  body.darkMode .TituloIndex:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  body.darkMode .parrafoIndex {
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-top: 4rem;
+    color: #ccff33;
+    text-align: center;
+    background-color: #46325d;
+    padding: 2rem;
+    border: #ccff33;
+    border-style: solid;
+    transition: 0.3s ease;
+    box-shadow: 0 1px 1px #ccff33;
+    text-align: left;
+    -webkit-animation: 2s anim-lineUp ease-out;
+    animation: 2s anim-lineUp ease-out;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+  body.darkMode .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);

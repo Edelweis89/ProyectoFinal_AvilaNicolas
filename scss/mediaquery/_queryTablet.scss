@@ -6,18 +6,41 @@
 
     .principal {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      height: 45vh;
+      height: 65vh;
       width: 100%;
+    }
 
-      .TituloIndex {
-        display: flex;
-        justify-content: center;
-        color: #ccff33;
-        font-size: 5rem;
-        text-align: center;
-        gap: 2rem;
-      }
+    .TituloIndex {
+      width: 90%;
+      height: min-content;
+
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      margin-top: 55rem;
+
+      color: #ccff33;
+      text-align: center;
+      @include efectoTitulos;
+    }
+
+    .parrafoIndex {
+      width: 90%;
+      height: auto;
+
+      background-color: transparent;
+      border: none;
+      font-size: 4rem;
+      margin-top: 4rem;
+
+      color: #ccff33;
+      text-align: center;
+      @include efectoTitulos;
+      margin-top: 8rem;
+      margin-bottom: 35rem;
     }
     #cardsContainer {
       width: 100%;
@@ -29,6 +52,7 @@
       justify-content: center;
       color: azure;
       gap: 4rem;
+      margin-top: 18rem;
       margin-bottom: 8rem;
 
       .card {

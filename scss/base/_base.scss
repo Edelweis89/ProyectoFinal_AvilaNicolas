@@ -5,9 +5,11 @@ html {
     padding: 0%; /* reseteamos valores por defecto de html5 */
     margin: 0;
     box-sizing: border-box;
+
     @font-face {
-      font-family: "horror";
-      src: url("../../font/get_schwifty.ttf");
+      font-family: horror;
+
+      src: url(../font/get_schwifty.ttf);
     }
   }
 }

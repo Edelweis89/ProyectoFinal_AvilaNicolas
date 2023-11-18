@@ -6,17 +6,43 @@
 
     .principal {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 35vh;
-      width: 100%;
 
-      .TituloIndex {
-        font-size: 15rem;
-        color: #caff8a;
-        font-family: "horror";
-        @include efectoTitulos;
-      }
+      justify-content: center;
+      height: 65vh;
+      width: 100%;
+    }
+
+    .TituloIndex {
+      width: 90%;
+      height: min-content;
+
+      background-color: transparent;
+      border: none;
+      font-size: 5rem;
+      margin-top: 25rem;
+
+      color: #ccff33;
+
+      @include efectoTitulos;
+      text-align: center;
+    }
+
+    .parrafoIndex {
+      width: 90%;
+      height: auto;
+
+      background-color: transparent;
+      border: none;
+      font-size: 4rem;
+      margin-top: 4rem;
+
+      color: #ccff33;
+      text-align: center;
+      @include efectoTitulos;
+      margin-top: 8rem;
+      margin-bottom: 35rem;
     }
     #cardsContainer {
       width: 100%;
@@ -61,15 +87,43 @@
 
     .principal {
       display: flex;
-      justify-content: center;
-      height: 45vh;
-      width: 100%;
+      flex-direction: column;
+      align-items: center;
 
-      h1 {
-        display: flex;
-        justify-content: center;
-        color: #ccff33;
-      }
+      justify-content: center;
+      height: 65vh;
+      width: 100%;
+    }
+
+    .TituloIndex {
+      width: 90%;
+      height: min-content;
+
+      background-color: transparent;
+      border: none;
+      font-size: 5rem;
+      margin-top: 25rem;
+
+      color: #ccff33;
+
+      @include efectoTitulos;
+      text-align: center;
+    }
+
+    .parrafoIndex {
+      width: 90%;
+      height: auto;
+
+      background-color: transparent;
+      border: none;
+      font-size: 4rem;
+      margin-top: 4rem;
+
+      color: #ccff33;
+      text-align: center;
+      @include efectoTitulos;
+      margin-top: 8rem;
+      margin-bottom: 35rem;
     }
 
     #cardsContainer {
