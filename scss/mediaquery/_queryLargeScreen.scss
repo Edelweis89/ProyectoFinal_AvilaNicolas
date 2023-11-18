@@ -195,14 +195,17 @@
     }
     #buscadorTarjetas {
       width: auto;
-      height: 100vh;
+      height: 350vh;
       display: grid;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-
+      align-items: center;
       background-color: transparent;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+      gap: 10rem;
 
       .cardBuscador {
         background-color: #46325d;

@@ -510,18 +510,23 @@ html * {
     font-size: 1.5rem;
   }
   body #buscadorTarjetas {
-    width: auto;
-    height: 100vh;
-    display: grid;
+    width: 90%;
+    height: min-content;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     background-color: transparent;
+    margin-top: 90rem;
+    margin-bottom: 10rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 10rem;
   }
   body #buscadorTarjetas .cardBuscador {
     background-color: #46325d;
-    width: max-content;
+    width: 90%;
     height: max-content;
     background-color: #46325d;
     padding: 2rem;
@@ -560,7 +565,7 @@ html * {
   }
   body #buscadorTarjetas .cardBuscador .tituloCardBuscador {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2rem;
     color: #f4ff80;
   }
@@ -578,7 +583,7 @@ html * {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5rem;
+    padding: 2rem;
   }
   body #buscadorTarjetas .cardBuscador .addfav {
     width: 30%;
@@ -1196,13 +1201,17 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    height: 100vh;
+    height: 350vh;
     display: grid;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     background-color: transparent;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 10rem;
   }
   body #buscadorTarjetas .cardBuscador {
     background-color: #46325d;
@@ -1880,13 +1889,17 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    height: 100vh;
+    height: 350vh;
     display: grid;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     background-color: transparent;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 10rem;
   }
   body #buscadorTarjetas .cardBuscador {
     background-color: #46325d;
@@ -2561,7 +2574,7 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    height: 100vh;
+    height: 350vh;
     display: grid;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2569,6 +2582,9 @@ html * {
     align-content: center;
     align-items: center;
     background-color: transparent;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 10rem;
   }
   body #buscadorTarjetas .cardBuscador {
     background-color: #46325d;

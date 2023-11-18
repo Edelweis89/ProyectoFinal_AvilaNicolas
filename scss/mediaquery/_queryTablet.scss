@@ -166,25 +166,30 @@
       }
     }
     #buscadorTarjetas {
-      width: auto;
-      height: 100vh;
-      display: grid;
+      width: 90%;
+      height: min-content;
+
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-
+      align-items: center;
       background-color: transparent;
+      margin-top: 90rem;
+      margin-bottom: 10rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      gap: 10rem;
 
       .cardBuscador {
         background-color: #46325d;
-        width: max-content;
+        width: 90%;
         height: max-content;
         @include efectoTitulos;
 
         .tituloCardBuscador {
           text-align: center;
-          font-size: 2.5rem;
+          font-size: 2rem;
           margin: 2rem;
           color: #f4ff80;
         }
@@ -203,7 +208,7 @@
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
-          padding: 5rem;
+          padding: 2rem;
         }
 
         .addfav {
