@@ -8,7 +8,7 @@ html * {
 }
 @font-face {
   font-family: "horror";
-  src: url("/font/get_schwifty.ttf");
+  src: url("../../font/get_schwifty.ttf");
 }
 
 @media only screen and (max-width: 600px) {
