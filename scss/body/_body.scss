@@ -1,7 +1,7 @@
 @media only screen and (max-width: 680px) {
   body {
     background-color: #d8f3dc;
-
+    min-height: 100vh;
     .principal {
       display: flex;
       flex-direction: column;

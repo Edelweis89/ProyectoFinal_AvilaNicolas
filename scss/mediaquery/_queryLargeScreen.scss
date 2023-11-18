@@ -1,7 +1,8 @@
-@media (min-width: 1366px) and (max-width: 1920px) {
+@media (min-width: 1024px) and (max-width: 1920px) {
   /// body index
   ///
   body {
+    min-height: 100vh;
     background-color: #d8f3dc;
 
     .principal {

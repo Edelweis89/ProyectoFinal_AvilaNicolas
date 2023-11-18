@@ -33,7 +33,7 @@
     }
     #buscadorTarjetas {
       width: auto;
-      height: 350vh;
+      min-height: 100vh;
       display: grid;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -41,8 +41,7 @@
       align-content: center;
       align-items: center;
       background-color: transparent;
-      margin-top: 10rem;
-      margin-bottom: 10rem;
+
       gap: 10rem;
 
       .cardBuscador {
