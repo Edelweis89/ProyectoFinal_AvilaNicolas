@@ -9,19 +9,18 @@
       height: 45vh;
       width: 100%;
 
-      h1 {
+      .TituloIndex {
         width: 85%;
         height: auto;
 
-        @include efectoTitulos;
-        @include gridCentrado;
-        background-color: #46325d;
+        background-color: transparent;
         border: none;
-        font-size: 2rem;
+        font-size: 4rem;
         margin-top: 4rem;
-        margin-left: 4rem;
+
         color: #ccff33;
         text-align: center;
+        @include efectoTitulos;
       }
     }
     #cardsContainer {
@@ -71,12 +70,18 @@
       height: 45vh;
       width: 100%;
 
-      h1 {
-        display: flex;
-        justify-content: center;
-        margin: 4rem;
-        font-size: 8rem;
+      .TituloIndex {
+        width: 85%;
+        height: auto;
+
+        background-color: transparent;
+        border: none;
+        font-size: 4rem;
+        margin-top: 2rem;
+
         color: #ccff33;
+        text-align: center;
+        @include efectoTitulos;
       }
     }
 

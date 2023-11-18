@@ -1,13 +1,13 @@
 html {
-  @font-face {
-    font-family: "Horror";
-    src: url(/font/get_schwifty.ttf);
-  }
   font-size: 62.5%; /* asignar unidad de medida 1rem ==16px por 1rem ==10px */
 
   * {
     padding: 0%; /* reseteamos valores por defecto de html5 */
     margin: 0;
     box-sizing: border-box;
+    @font-face {
+      font-family: "horror";
+      src: url("/font/get_schwifty.ttf");
+    }
   }
 }

@@ -21,31 +21,40 @@ function actualizarLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
 }
 
+function actualizarLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
 const nodosPersonajesFav = (results, container) => {
+  // Verificar si hay datos almacenados en el local storage
+  if (localStorage.length === 0) {
+    return;
+  }
+
   const nodos = results.reduce((acc, element) => {
     return (
       acc +
       `
-    <article class="cardFavoritos"> 
-    <h3 class= "tituloCardFavoritos">${element.name}</h3>
-    <div class= "contenidoCardFavoritos">
-    <p> Status: ${element.status} </p>
-          <p> Species: ${element.species} </p>
-          <p> Gender: ${element.gender} </p>
-          <p> Origin: ${element.origin.name} </p>
-          <p> Location: ${element.location.name}</p>
-          <p> Created: ${element.created}</p>
- 
-          </div>
-    <div class= imgCardFavoritos>
-          <img src="${element.image}" alt= ${element.name}>
-      </div>
-      
-      <button class="removeFav" id="add-${element.id}">
-      Eliminar de Favoritos
-      </button>
-</article>
-    `
+     <article class="cardFavoritos"> 
+     <h3 class= "tituloCardFavoritos">${element.name}</h3>
+     <div class= "contenidoCardFavoritos">
+     <p> Status: ${element.status} </p>
+           <p> Species: ${element.species} </p>
+           <p> Gender: ${element.gender} </p>
+           <p> Origin: ${element.origin.name} </p>
+           <p> Location: ${element.location.name}</p>
+           <p> Created: ${element.created}</p>
+  
+           </div>
+     <div class= imgCardFavoritos>
+           <img src="${element.image}" alt= ${element.name}>
+       </div>
+       
+       <button class="removeFav" id="add-${element.id}">
+       Eliminar de Favoritos
+       </button>
+ </article>
+     `
     );
   }, "");
 

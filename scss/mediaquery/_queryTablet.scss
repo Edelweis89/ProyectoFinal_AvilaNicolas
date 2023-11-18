@@ -10,11 +10,13 @@
       height: 45vh;
       width: 100%;
 
-      h1 {
+      .TituloIndex {
         display: flex;
         justify-content: center;
         color: #ccff33;
         font-size: 5rem;
+        text-align: center;
+        gap: 2rem;
       }
     }
     #cardsContainer {

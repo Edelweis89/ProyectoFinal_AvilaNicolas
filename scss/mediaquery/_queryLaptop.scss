@@ -257,7 +257,7 @@
 
       .cardFavoritos {
         background-color: #46325d;
-        height: max-content;
+        height: min-content;
         border: #ccff33;
         margin: 3rem;
         @include efectoTitulos;
