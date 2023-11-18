@@ -1,8 +1,11 @@
 @import "base/_base";
 @import "utilidades/_mixin";
-@import "body/_body";
 @import "header/_header";
 @import "footer/_footer";
+@import "mediaquery/queryTablet";
+@import "mediaquery/queryLaptop";
+@import "mediaquery/queryLargeScreen";
+@import "body/_body";
 @import "pages/_buscador";
 @import "pages/_contacto";
 @import "pages/_favoritos";

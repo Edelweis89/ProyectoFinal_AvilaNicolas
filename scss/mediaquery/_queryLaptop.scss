@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1366px) {
   /// body index
   ///
   body {
@@ -6,15 +6,16 @@
 
     .principal {
       display: flex;
+      align-items: center;
       justify-content: center;
-      height: 45vh;
+      height: 35vh;
       width: 100%;
 
-      h1 {
-        display: flex;
-        justify-content: center;
-        color: #ccff33;
-        font-size: 5rem;
+      .TituloIndex {
+        font-size: 8rem;
+        color: #caff8a;
+        font-family: "horror";
+        @include efectoTitulos;
       }
     }
     #cardsContainer {
@@ -23,7 +24,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       justify-content: center;
       color: azure;
       gap: 4rem;
@@ -68,7 +69,6 @@
         display: flex;
         justify-content: center;
         color: #ccff33;
-        font-size: 5rem;
       }
     }
 
@@ -163,7 +163,7 @@
           color: #f4ff80;
         }
         .contenidoCardBuscador {
-          width: 100%;
+          width: 90%;
           border: 1rem;
           margin: 1rem;
           height: 10rem;
@@ -182,7 +182,7 @@
 
         .addfav {
           width: 30%;
-          height: 6%;
+          height: 18%;
           margin-left: 5rem;
           margin-right: 2rem;
           background-color: #a7c957;
@@ -191,7 +191,7 @@
 
         .removeFav {
           width: 30%;
-          height: 6%;
+          height: 18%;
           margin-left: 5rem;
           margin-right: 2rem;
           background-color: #e63946;
@@ -208,7 +208,7 @@
     height: 100vh;
 
     #tituloFav {
-      width: 85%;
+      width: 90%;
       height: auto;
 
       @include efectoTitulos;
@@ -257,7 +257,7 @@
 
       .cardFavoritos {
         background-color: #46325d;
-        height: 100rem;
+        height: max-content;
         border: #ccff33;
         margin: 3rem;
         @include efectoTitulos;
@@ -299,8 +299,8 @@
       }
     }
   }
-  /// contacto
 
+  /// contacto
   .form {
     display: flex;
     flex-direction: row;

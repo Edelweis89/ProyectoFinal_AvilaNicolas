@@ -2,11 +2,11 @@
   header {
     width: 100%;
     height: 8rem;
-    background-color: #3c096c;
-
+    background-color: transparent;
     display: flex;
+
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     .DarkMode {
       background-color: transparent;
       width: 3rem;
@@ -35,6 +35,134 @@
           color: #caff8a;
           text-decoration: none;
           font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 8rem;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .DarkMode {
+      background-color: transparent;
+      width: 3rem;
+    }
+    #logo {
+      width: 5rem;
+      height: 5rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+    ul {
+      li {
+        display: inline;
+
+        margin: 1rem;
+
+        text-decoration: none;
+        a {
+          color: #caff8a;
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  header {
+    width: 100%;
+    height: 8rem;
+    background-color: #212529;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    .DarkMode {
+      background-color: transparent;
+      width: 3rem;
+    }
+    #logo {
+      width: 5rem;
+      height: 5rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+    ul {
+      li {
+        display: inline;
+
+        margin: 1rem;
+
+        text-decoration: none;
+        a {
+          color: #caff8a;
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1920px) {
+  header {
+    width: 100%;
+    height: 8rem;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .DarkMode {
+      background-color: transparent;
+      width: 3rem;
+    }
+    #logo {
+      width: 8rem;
+      height: 8rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+    }
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+    ul {
+      li {
+        display: inline;
+
+        margin: 1rem;
+
+        text-decoration: none;
+        a {
+          color: #caff8a;
+          text-decoration: none;
+          font-size: 2rem;
         }
       }
     }

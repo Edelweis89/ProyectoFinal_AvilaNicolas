@@ -9,7 +9,7 @@
 
       @include efectoTitulos;
       @include gridCentrado;
-      background-color: transparent;
+      background-color: #46325d;
       border: none;
       font-size: 2rem;
       margin-top: 4rem;
@@ -44,7 +44,7 @@
 
     #cardsContainerFavoritos {
       width: 100%;
-      height: max-content;
+      height: 100rem;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

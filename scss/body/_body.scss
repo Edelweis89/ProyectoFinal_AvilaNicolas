@@ -1,19 +1,27 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   body {
-    background-color: #003049;
+    background-color: #d8f3dc;
 
     .principal {
       display: flex;
-      align-items: center;
+
       justify-content: center;
-      height: 35vh;
+      height: 45vh;
       width: 100%;
 
-      .TituloIndex {
-        font-size: 5rem;
-        color: #caff8a;
-        font-family: "horror";
+      h1 {
+        width: 85%;
+        height: auto;
+
         @include efectoTitulos;
+        @include gridCentrado;
+        background-color: #46325d;
+        border: none;
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-left: 4rem;
+        color: #ccff33;
+        text-align: center;
       }
     }
     #cardsContainer {
@@ -54,7 +62,7 @@
   }
 
   body.darkMode {
-    background-color: #353535;
+    background-color: #212529;
 
     .principal {
       display: flex;
@@ -66,7 +74,7 @@
       h1 {
         display: flex;
         justify-content: center;
-        margin: 8rem;
+        margin: 4rem;
         font-size: 8rem;
         color: #ccff33;
       }
@@ -78,7 +86,6 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-
       font-size: 1.5rem;
       justify-content: center;
       color: transparent;
@@ -86,8 +93,6 @@
       margin-bottom: 4rem;
 
       .card {
-        background-color: #606c38;
-
         .tituloCard {
           text-align: center;
           font-size: 2rem;
