@@ -311,9 +311,9 @@
 
       .cardFavoritos {
         background-color: #46325d;
-        height: min-content;
+        height: max-content;
         border: #ccff33;
-        margin: 3rem;
+
         @include efectoTitulos;
 
         .tituloCardFavoritos {
@@ -326,8 +326,8 @@
           margin-bottom: 4rem;
           text-align: center;
           font-family: "Roboto", sans-serif;
-          text-align: center;
-          width: 18rem;
+
+          width: 100%;
           border: 1rem;
 
           height: 10rem;
