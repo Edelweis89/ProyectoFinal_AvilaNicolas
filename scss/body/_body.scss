@@ -14,7 +14,7 @@
     .TituloIndex {
       width: 90%;
       height: min-content;
-
+      font-family: "horror";
       background-color: transparent;
       border: none;
       font-size: 5rem;
@@ -34,7 +34,6 @@
       border: none;
       font-size: 4rem;
       margin-top: 4rem;
-
       color: #ccff33;
       text-align: center;
       @include efectoTitulos;

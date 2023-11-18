@@ -279,6 +279,7 @@ html * {
   body .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
     font-size: 2rem;
@@ -878,6 +879,7 @@ html * {
   body .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
     font-size: 5rem;
@@ -1562,6 +1564,7 @@ html * {
   body .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
     font-size: 5rem;
@@ -2246,6 +2249,7 @@ html * {
   body .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
     font-size: 5rem;
