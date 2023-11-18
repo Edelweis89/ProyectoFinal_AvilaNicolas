@@ -1,40 +1,45 @@
-.form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 80vh;
-  justify-content: center;
-
-  h2 {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    font-size: 6rem;
-    margin-top: 5rem;
-    font-family: "horror";
-    color: #a7c957;
-  }
-
-  #formulario {
-    width: 30rem;
-    height: 40rem;
-    gap: 1rem;
-    font-size: 2rem;
+@media only screen and (max-width: 600px) {
+  .form {
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border: solid black 1px;
-    background-color: #a7c957;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-content: flex-start;
+
+    h2 {
+      width: 90%;
+      height: min-content;
+      justify-content: center;
+      font-size: 4rem;
+      font-family: "horror";
+      @include efectoTitulos;
+      background-color: transparent;
+      text-align: center;
+      margin: 5rem;
+      color: #caff8a;
+    }
+
+    #formulario {
+      width: 30rem;
+      height: 40rem;
+      gap: 1rem;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      @include efectoTitulos;
+      background-color: #9163cb;
+    }
   }
-}
 
-#infoContacto {
-  background-color: #a7c957;
-  width: 25%;
-  height: 10rem;
+  #infoContacto {
+    background-color: #a7c957;
+    width: 25%;
+    height: 10rem;
 
-  text-align: left;
-  color: #000000;
+    text-align: left;
+    color: #000000;
+  }
 }

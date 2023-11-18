@@ -1,7 +1,8 @@
 @import "base/_base";
+@import "utilidades/_mixin";
 @import "body/_body";
 @import "header/_header";
 @import "footer/_footer";
 @import "pages/_buscador";
 @import "pages/_contacto";
-@import "pages/_favoritos.scss";
+@import "pages/_favoritos";

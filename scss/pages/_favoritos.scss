@@ -1,36 +1,97 @@
-body {
-  width: 100%;
-  height: 100vh;
-
-  #tituloFav {
+@media only screen and (max-width: 600px) {
+  body {
     width: 100%;
-    height: 5rem;
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5rem;
+    height: 100vh;
 
-    h1 {
-      color: #f4ff80;
+    #tituloFav {
+      width: 85%;
+      height: auto;
+
+      @include efectoTitulos;
+      @include gridCentrado;
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      margin-top: 4rem;
+      margin-left: 4rem;
+      color: #ccff33;
+      text-align: center;
     }
 
-    #listaFav {
+    #navFav {
       width: 100%;
-      height: 100vh;
-      display: grid;
+      height: 7rem;
+      background-color: #2b2d42;
+      margin: 5rem 0 5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .orderAsc {
+        background-color: #ccff33;
+        font-size: 1.6rem;
+      }
+      .orderDes {
+        background-color: #ccff33;
+        font-size: 1.6rem;
+      }
+      .eliminarGlobalFav {
+        background-color: #ccff33;
+        font-size: 1.6rem;
+      }
+    }
+
+    #cardsContainerFavoritos {
+      width: 100%;
+      height: max-content;
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      font-size: 1.2rem;
       justify-content: center;
-      margin-top: 5rem;
-      background-color: transparent;
-      li {
-        display: grid;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+
+      .cardFavoritos {
+        background-color: #46325d;
+        height: max-content;
+        border: #ccff33;
+        margin: 3rem;
+        @include efectoTitulos;
+
+        .tituloCardFavoritos {
+          text-align: center;
+          font-size: 1.6rem;
+          margin: 3rem;
+          color: #f4ff80;
+        }
+        .contenidoCardFavoritos {
+          margin-bottom: 4rem;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+          text-align: center;
+          width: 18rem;
+          border: 1rem;
+          width: 100%;
+          height: 10rem;
+          color: #ffffff;
+          font-size: 1.6rem;
+        }
+        .imgCardFavoritos {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 2rem;
+        }
+
+        .removeFav {
+          width: 40%;
+          height: 15%;
+          margin-left: 30%;
+          margin-bottom: 3rem;
+          background-color: #ccff33;
+          font-size: 1.5rem;
+        }
       }
     }
   }

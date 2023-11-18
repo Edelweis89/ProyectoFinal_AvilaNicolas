@@ -1,0 +1,67 @@
+@mixin efectoTitulos {
+  background-color: #46325d;
+  padding: 2rem;
+  border: #ccff33;
+  border-style: solid;
+  transition: 0.3s ease;
+  box-shadow: 0 1px 1px #ccff33;
+  text-align: left;
+  -webkit-animation: 2s anim-lineUp ease-out;
+  animation: 2s anim-lineUp ease-out;
+  &:hover {
+    box-shadow: 0 5px 20px #ccff33;
+    -webkit-transform: translateY(-10px) scale(1.02);
+    -moz-transform: translateY(-10px) scale(1.02);
+    -ms-transform: translateY(-10px) scale(1.02);
+    -o-transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+@mixin estiloParrafo {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: left;
+  color: $colorParrafo;
+  text-transform: uppercase;
+}
+
+@mixin marginLateral {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+@mixin flexboxCentrado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+@mixin gridCentrado {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
