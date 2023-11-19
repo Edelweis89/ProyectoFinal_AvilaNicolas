@@ -9,36 +9,45 @@
       justify-content: center;
       height: 65vh;
       width: 100%;
-    }
 
-    .TituloIndex {
-      width: 90%;
-      height: min-content;
-      font-family: "horror";
-      background-color: transparent;
-      border: none;
-      font-size: 5rem;
-      margin-top: 25rem;
+      #cargarMas {
+        width: 70%;
+        height: 20%;
+        font-size: 2rem;
+        color: #ccff33;
+        background-color: #212529;
+        margin-bottom: 3rem;
+      }
 
-      color: #ccff33;
+      .TituloIndex {
+        width: 90%;
+        height: min-content;
+        font-family: "horror";
+        background-color: transparent;
+        border: none;
+        font-size: 5rem;
+        margin-top: 25rem;
 
-      @include efectoTitulos;
-      text-align: center;
-    }
+        color: #ccff33;
 
-    .parrafoIndex {
-      width: 90%;
-      height: auto;
+        @include efectoTitulos;
+        text-align: center;
+      }
 
-      background-color: transparent;
-      border: none;
-      font-size: 4rem;
-      margin-top: 4rem;
-      color: #ccff33;
-      text-align: center;
-      @include efectoTitulos;
-      margin-top: 8rem;
-      margin-bottom: 5rem;
+      .parrafoIndex {
+        width: 90%;
+        height: auto;
+
+        background-color: transparent;
+        border: none;
+        font-size: 4rem;
+        margin-top: 4rem;
+        color: #ccff33;
+        text-align: center;
+        @include efectoTitulos;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+      }
     }
     #cardsContainer {
       width: 100%;
@@ -55,7 +64,6 @@
 
       .card {
         @include efectoTitulos;
-
         .tituloCard {
           text-align: center;
           font-size: 2rem;

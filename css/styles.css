@@ -277,6 +277,14 @@ html * {
     width: auto;
     height: auto;
   }
+  body .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
+  }
   body .TituloIndex {
     font-family: "horror";
     background-color: transparent;
@@ -880,13 +888,13 @@ html * {
     height: 65vh;
     width: 100%;
   }
-  body .TituloIndex {
+  body .principal .TituloIndex {
     width: 90%;
     height: min-content;
     font-family: "horror";
     background-color: transparent;
     border: none;
-    font-size: 5rem;
+    font-size: 7rem;
     margin-top: 25rem;
     color: #ccff33;
     background-color: #46325d;
@@ -900,7 +908,7 @@ html * {
     animation: 2s anim-lineUp ease-out;
     text-align: center;
   }
-  body .TituloIndex:hover {
+  body .principal .TituloIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -925,7 +933,7 @@ html * {
       transform: translateY(0%);
     }
   }
-  body .parrafoIndex {
+  body .principal .parrafoIndex {
     width: 90%;
     height: auto;
     background-color: transparent;
@@ -944,9 +952,9 @@ html * {
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
     margin-top: 8rem;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
-  body .parrafoIndex:hover {
+  body .principal .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -970,6 +978,14 @@ html * {
       opacity: 1;
       transform: translateY(0%);
     }
+  }
+  body .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
   }
   body #cardsContainer {
     width: 100%;
@@ -1049,12 +1065,13 @@ html * {
     height: 65vh;
     width: 100%;
   }
-  body.darkMode .TituloIndex {
+  body.darkMode .principal .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
-    font-size: 5rem;
+    font-size: 7rem;
     margin-top: 25rem;
     color: #ccff33;
     background-color: #46325d;
@@ -1068,7 +1085,7 @@ html * {
     animation: 2s anim-lineUp ease-out;
     text-align: center;
   }
-  body.darkMode .TituloIndex:hover {
+  body.darkMode .principal .TituloIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1093,7 +1110,7 @@ html * {
       transform: translateY(0%);
     }
   }
-  body.darkMode .parrafoIndex {
+  body.darkMode .principal .parrafoIndex {
     width: 90%;
     height: auto;
     background-color: transparent;
@@ -1112,9 +1129,9 @@ html * {
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
     margin-top: 8rem;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
-  body.darkMode .parrafoIndex:hover {
+  body.darkMode .principal .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1138,6 +1155,14 @@ html * {
       opacity: 1;
       transform: translateY(0%);
     }
+  }
+  body.darkMode .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
   }
   body.darkMode #cardsContainer {
     width: 100%;
@@ -1569,13 +1594,13 @@ html * {
     height: 65vh;
     width: 100%;
   }
-  body .TituloIndex {
+  body .principal .TituloIndex {
     width: 90%;
     height: min-content;
     font-family: "horror";
     background-color: transparent;
     border: none;
-    font-size: 5rem;
+    font-size: 8rem;
     margin-top: 25rem;
     color: #ccff33;
     background-color: #46325d;
@@ -1589,7 +1614,7 @@ html * {
     animation: 2s anim-lineUp ease-out;
     text-align: center;
   }
-  body .TituloIndex:hover {
+  body .principal .TituloIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1614,7 +1639,7 @@ html * {
       transform: translateY(0%);
     }
   }
-  body .parrafoIndex {
+  body .principal .parrafoIndex {
     width: 90%;
     height: auto;
     background-color: transparent;
@@ -1633,9 +1658,9 @@ html * {
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
     margin-top: 8rem;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
-  body .parrafoIndex:hover {
+  body .principal .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1660,7 +1685,16 @@ html * {
       transform: translateY(0%);
     }
   }
+  body .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
+  }
   body #cardsContainer {
+    margin-top: 15rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -1738,12 +1772,13 @@ html * {
     height: 65vh;
     width: 100%;
   }
-  body.darkMode .TituloIndex {
+  body.darkMode .principal .TituloIndex {
     width: 90%;
     height: min-content;
+    font-family: "horror";
     background-color: transparent;
     border: none;
-    font-size: 5rem;
+    font-size: 8rem;
     margin-top: 25rem;
     color: #ccff33;
     background-color: #46325d;
@@ -1757,7 +1792,7 @@ html * {
     animation: 2s anim-lineUp ease-out;
     text-align: center;
   }
-  body.darkMode .TituloIndex:hover {
+  body.darkMode .principal .TituloIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1782,7 +1817,7 @@ html * {
       transform: translateY(0%);
     }
   }
-  body.darkMode .parrafoIndex {
+  body.darkMode .principal .parrafoIndex {
     width: 90%;
     height: auto;
     background-color: transparent;
@@ -1801,9 +1836,9 @@ html * {
     -webkit-animation: 2s anim-lineUp ease-out;
     animation: 2s anim-lineUp ease-out;
     margin-top: 8rem;
-    margin-bottom: 35rem;
+    margin-bottom: 5rem;
   }
-  body.darkMode .parrafoIndex:hover {
+  body.darkMode .principal .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -1827,6 +1862,14 @@ html * {
       opacity: 1;
       transform: translateY(0%);
     }
+  }
+  body.darkMode .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
   }
   body.darkMode #cardsContainer {
     width: 100%;
@@ -2257,7 +2300,15 @@ html * {
     height: 65vh;
     width: 100%;
   }
-  body .TituloIndex {
+  body .principal #cargarMas {
+    width: 70%;
+    height: 20%;
+    font-size: 2rem;
+    color: #ccff33;
+    background-color: #212529;
+    margin-bottom: 3rem;
+  }
+  body .principal .TituloIndex {
     width: 90%;
     height: min-content;
     font-family: "horror";
@@ -2277,7 +2328,7 @@ html * {
     animation: 2s anim-lineUp ease-out;
     text-align: center;
   }
-  body .TituloIndex:hover {
+  body .principal .TituloIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);
@@ -2302,7 +2353,7 @@ html * {
       transform: translateY(0%);
     }
   }
-  body .parrafoIndex {
+  body .principal .parrafoIndex {
     width: 90%;
     height: auto;
     background-color: transparent;
@@ -2323,7 +2374,7 @@ html * {
     margin-top: 8rem;
     margin-bottom: 5rem;
   }
-  body .parrafoIndex:hover {
+  body .principal .parrafoIndex:hover {
     box-shadow: 0 5px 20px #ccff33;
     -webkit-transform: translateY(-10px) scale(1.02);
     -moz-transform: translateY(-10px) scale(1.02);

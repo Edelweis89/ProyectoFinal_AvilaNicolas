@@ -28,16 +28,24 @@ const nodosPersonajes = (results, container) => {
   container.innerHTML = nodos;
 };
 
+/// generamos funcion para llamar a la api, cargar los personajes y generar un evento en un boton para mostrar la pagina siguiente de la informacion.
 const llamadoApi = (url, generarNodos, container) => {
   fetch(url)
     .then((res) => res.json())
     .then((results) => {
-      generarNodos(results, container);
+      generarNodos(results.results, container);
+      const siguienteUrl = results.info.next;
+      if (siguienteUrl) {
+        document.getElementById("cargarMas").onclick = () =>
+          llamadoApi(siguienteUrl, generarNodos, container);
+      } else {
+        document.getElementById("cargarMas").style.display = "none";
+      }
     });
 };
 
 llamadoApi(
-  "https://rickandmortyapi.com/api/character/1, 2, 3, 4, 5, 6, 7, 8, 34, 56, 67, 42, 59, 24, 22, 116, 180, 146, 148, 183",
+  "https://rickandmortyapi.com/api/character",
   nodosPersonajes,
   containerCards
 );

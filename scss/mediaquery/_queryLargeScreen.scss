@@ -13,39 +13,49 @@
       justify-content: center;
       height: 65vh;
       width: 100%;
-    }
 
-    .TituloIndex {
-      width: 90%;
-      height: min-content;
-      font-family: "horror";
-      background-color: transparent;
-      border: none;
-      font-size: 5rem;
-      margin-top: 25rem;
+      .TituloIndex {
+        width: 90%;
+        height: min-content;
+        font-family: "horror";
+        background-color: transparent;
+        border: none;
+        font-size: 8rem;
+        margin-top: 25rem;
 
-      color: #ccff33;
+        color: #ccff33;
 
-      @include efectoTitulos;
-      text-align: center;
-    }
+        @include efectoTitulos;
+        text-align: center;
+      }
 
-    .parrafoIndex {
-      width: 90%;
-      height: auto;
+      .parrafoIndex {
+        width: 90%;
+        height: auto;
 
-      background-color: transparent;
-      border: none;
-      font-size: 4rem;
-      margin-top: 4rem;
+        background-color: transparent;
+        border: none;
+        font-size: 4rem;
+        margin-top: 4rem;
 
-      color: #ccff33;
-      text-align: center;
-      @include efectoTitulos;
-      margin-top: 8rem;
-      margin-bottom: 35rem;
+        color: #ccff33;
+        text-align: center;
+        @include efectoTitulos;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+      }
+
+      #cargarMas {
+        width: 70%;
+        height: 20%;
+        font-size: 2rem;
+        color: #ccff33;
+        background-color: #212529;
+        margin-bottom: 3rem;
+      }
     }
     #cardsContainer {
+      margin-top: 15rem;
       width: 100%;
       height: auto;
       display: flex;
@@ -94,39 +104,47 @@
       justify-content: center;
       height: 65vh;
       width: 100%;
+
+      .TituloIndex {
+        width: 90%;
+        height: min-content;
+        font-family: "horror";
+        background-color: transparent;
+        border: none;
+        font-size: 8rem;
+        margin-top: 25rem;
+
+        color: #ccff33;
+
+        @include efectoTitulos;
+        text-align: center;
+      }
+
+      .parrafoIndex {
+        width: 90%;
+        height: auto;
+
+        background-color: transparent;
+        border: none;
+        font-size: 4rem;
+        margin-top: 4rem;
+
+        color: #ccff33;
+        text-align: center;
+        @include efectoTitulos;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+      }
+
+      #cargarMas {
+        width: 70%;
+        height: 20%;
+        font-size: 2rem;
+        color: #ccff33;
+        background-color: #212529;
+        margin-bottom: 3rem;
+      }
     }
-
-    .TituloIndex {
-      width: 90%;
-      height: min-content;
-
-      background-color: transparent;
-      border: none;
-      font-size: 5rem;
-      margin-top: 25rem;
-
-      color: #ccff33;
-
-      @include efectoTitulos;
-      text-align: center;
-    }
-
-    .parrafoIndex {
-      width: 90%;
-      height: auto;
-
-      background-color: transparent;
-      border: none;
-      font-size: 4rem;
-      margin-top: 4rem;
-
-      color: #ccff33;
-      text-align: center;
-      @include efectoTitulos;
-      margin-top: 8rem;
-      margin-bottom: 35rem;
-    }
-
     #cardsContainer {
       width: 100%;
       height: auto;

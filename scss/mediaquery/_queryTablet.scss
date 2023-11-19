@@ -12,8 +12,15 @@
       margin-top: 10rem;
       width: auto;
       height: auto;
+      #cargarMas {
+        width: 70%;
+        height: 20%;
+        font-size: 2rem;
+        color: #ccff33;
+        background-color: #212529;
+        margin-bottom: 3rem;
+      }
     }
-
     .TituloIndex {
       font-family: "horror";
       background-color: transparent;
@@ -38,6 +45,7 @@
       margin-top: 8rem;
       margin-bottom: 25rem;
     }
+
     #cardsContainer {
       width: auto;
       height: auto;
