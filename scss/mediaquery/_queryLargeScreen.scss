@@ -214,7 +214,7 @@
     }
     #buscadorTarjetas {
       width: auto;
-      height: 350vh;
+      height: max-content;
       display: grid;
       flex-direction: row;
       flex-wrap: wrap;

@@ -374,7 +374,7 @@ html * {
   }
   body #cardsContainer {
     width: auto;
-    height: auto;
+    height: max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1225,7 +1225,7 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    height: 350vh;
+    height: max-content;
     display: grid;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1932,7 +1932,7 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    height: 350vh;
+    height: max-content;
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2597,7 +2597,7 @@ html * {
 }
 @media only screen and (max-width: 600px) {
   body {
-    height: 100vh;
+    height: auto;
   }
   body #buscadorBarra {
     width: 100%;
@@ -2626,7 +2626,7 @@ html * {
   }
   body #buscadorTarjetas {
     width: auto;
-    min-height: 100vh;
+    height: max-content;
     display: grid;
     flex-direction: row;
     flex-wrap: nowrap;

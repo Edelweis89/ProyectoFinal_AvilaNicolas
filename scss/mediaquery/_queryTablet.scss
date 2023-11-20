@@ -48,7 +48,7 @@
 
     #cardsContainer {
       width: auto;
-      height: auto;
+      height: max-content;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

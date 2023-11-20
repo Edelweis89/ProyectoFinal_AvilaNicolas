@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   body {
-    height: 100vh;
+    height: auto;
     #buscadorBarra {
       width: 100%;
       height: 8rem;
@@ -33,7 +33,7 @@
     }
     #buscadorTarjetas {
       width: auto;
-      min-height: 100vh;
+      height: max-content;
       display: grid;
       flex-direction: row;
       flex-wrap: nowrap;

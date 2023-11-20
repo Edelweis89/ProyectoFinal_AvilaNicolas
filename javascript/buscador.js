@@ -1,6 +1,6 @@
 let personajesFiltro;
 let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
-
+const obtenerDelLs = (clave) => JSON.parse(localStorage.getItem(clave));
 function agregarFavorito(personaje) {
   favoritos.push(personaje);
 }
@@ -19,10 +19,9 @@ function actualizarLocalStorage(key, data) {
 
 const obtenerPj = (clase, data) => {
   const obtenerId = clase.slice(4);
+
   return data.find((element) => element.id === Number(obtenerId));
 };
-
-/// crear tarjetas con Doom para mostrar la info de los personajes Buscados.
 
 const nodosPersonajesBuscador = (results, container) => {
   const nodoBuscador = results.reduce((acc, element) => {
@@ -30,68 +29,87 @@ const nodosPersonajesBuscador = (results, container) => {
       acc +
       `
 
-      <article class="cardBuscador">
-      <h3 class= "tituloCardBuscador">${element.name}</h3>
-      <div class= "contenidoCardBuscador">
-      <p> Status: ${element.status} </p>
-            <p> Species: ${element.species} </p>
-            <p> Gender: ${element.gender} </p>
-            <p> Origin: ${element.origin.name} </p>
-            <p> Location: ${element.location.name}</p>
-            <p> Created: ${element.created}</p>
+              <article class="cardBuscador">
+              <h3 class= "tituloCardBuscador">${element.name}</h3>
+              <div class= "contenidoCardBuscador">
+              <p> Status: ${element.status} </p>
+                   <p> Species: ${element.species} </p>
+                   <p> Gender: ${element.gender} </p>
+                   <p> Origin: ${element.origin.name} </p>
+                   <p> Location: ${element.location.name}</p>
+                   <p> Created: ${element.created}</p>
 
-            </div>
-      <div class= imgCardBuscador>
-            <img src="${element.image}" alt= ${element.name}>
-        </div>
-        <button class="addfav" id="add-${element.id}"> Agregar a Favoritos
-        
+                   </div>
+              <div class= imgCardBuscador>
+                   <img src="${element.image}" alt= ${element.name}>
+               </div>
+               <button class="addfav" id="add-${element.id}"> Agregar a Favoritos
 
-                </button>
-                <button class="removeFav" id="add-${element.id}">
-                Eliminar de Favoritos
-        
+                       
 
-                </button>
-
-  </article>
-      `
+            </article>
+              `
     );
   }, "");
 
   container.innerHTML = nodoBuscador;
 };
 
-/// llamado a la api
-const llamadoApiBuscador = (url) => {
-  fetch(url)
-    .then((res) => res.json())
-    .then((results) => {
-      personajesFiltro = results;
+const llamadoApiBuscador = async (url) => {
+  try {
+    const respuesta = await fetch(url);
+
+    if (respuesta.ok) {
+      const data = await respuesta.json();
+      personajesFiltro = data.results;
+      nodosPersonajesBuscador(
+        data.results,
+        document.getElementById("buscadorTarjetas")
+      );
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Error al buscar el personaje:",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+    }
+  } catch (error) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Error al buscar el personaje:",
+      showConfirmButton: false,
+      timer: 2000,
     });
+  }
 };
 
-llamadoApiBuscador(
-  "https://rickandmortyapi.com/api/character/1, 2, 3, 4, 5, 6, 7, 8, 34, 56, 67, 42, 59, 24, 22, 116, 180, 146, 148, 183"
-);
+// Obtenemos el elemento del formulario
+const buscarForm = document.getElementById("buscarForm");
 
-// filtrar por búsqueda de nombre
-const inputBusqueda = document.querySelector("#input-busqueda");
+// Agregamos un evento para detectar cuando se haga clic en el botón de búsqueda
+buscarForm.addEventListener("submit", async (event) => {
+  event.preventDefault(); // Evitamos que la página se recargue al hacer clic en el botón de búsqueda
 
-document.querySelector("#buscarForm").onsubmit = (event) => {
-  event.preventDefault();
-  const filteredCharacters = personajesFiltro.filter((personaje) =>
-    personaje.name.toLowerCase().includes(inputBusqueda.value.toLowerCase())
+  const inputBuscar = document.getElementById("input-busqueda");
+  const nombrePersonaje = inputBuscar.value;
+
+  // Limpiamos el valor del input
+  inputBuscar.value = "";
+
+  llamadoApiBuscador(
+    `https://rickandmortyapi.com/api/character/?name=${nombrePersonaje}`
   );
-  nodosPersonajesBuscador(filteredCharacters, buscadorTarjetas);
-};
-
-/// Proceso de agregar o eliminar favoritos segun el evento escuchado en el body por el navegador. Si el evento contiene la clase addfav se agregar la tarjeta a favorita, si el evento contiene la clase removeFav, la tarjeta se elimina de favoritos.
+});
 
 document.body.onclick = (event) => {
   if (event.target.classList.contains("addfav")) {
     agregarFavorito(obtenerPj(event.target.id, personajesFiltro));
+
     actualizarLocalStorage("favoritos", favoritos);
+
     Toastify({
       text: `El personaje ${
         obtenerPj(event.target.id, personajesFiltro).name
@@ -107,23 +125,6 @@ document.body.onclick = (event) => {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
       },
       onClick: function () {},
-    }).showToast();
-  }
-
-  if (event.target.classList.contains("removeFav")) {
-    const personaje = obtenerPj(event.target.id, favoritos);
-    eliminarFavorito(personaje);
-    actualizarLocalStorage("favoritos", favoritos);
-
-    Toastify({
-      text: `El personaje ${personaje.name} ha sido eliminado de Favoritos.`,
-      duration: 3000,
-      gravity: "top",
-      position: "center",
-      stopOnFocus: true,
-      style: {
-        background: "linear-gradient(to right, #c0392b, #8e44ad)",
-      },
     }).showToast();
   }
 };
